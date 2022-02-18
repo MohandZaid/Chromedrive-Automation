@@ -22,59 +22,39 @@ driver.find_element_by_id("mod-x").click()
 driver.find_element_by_id("gotit").click()
 time.sleep(2)
 
-pyautogui.moveTo(500, 500, duration = 0.5)
-
-pyautogui.rightClick()
-time.sleep(2)
-pyautogui.rightClick()
 
 
-driver.find_element_by_id("context-menu").click()
-
-driver.find_element_by_id("context-clear-workspace").click()
-
-time.sleep(2)
+pyautogui.hotkey("ctrl", "a")
+pyautogui.hotkey("delete")
 
 
-driver.find_element_by_id("lt-file").click()
-driver.find_element_by_id("lt-file").click()
+time.sleep(1)
 
-
-
-driver.find_element_by_id("file-import").click()
+pyautogui.hotkey("i")
 
 time.sleep(1)
 
 
-for i in range(5):
-    pyautogui.hotkey("tab")
-
-pyautogui.hotkey("enter")
+pyautogui.hotkey("alt", "d")
 
 
 pyautogui.typewrite("C:/Users/mohand/Desktop")
 
 pyautogui.hotkey("enter")
 
-for i in range(10):
-    pyautogui.hotkey("tab")
+pyautogui.hotkey("alt", "n")
 
-time.sleep(1)
 
 pyautogui.typewrite("King.STL")
 
-for i in range(2):
-    pyautogui.hotkey("tab")
 
 pyautogui.hotkey("enter")
 
+time.sleep(2)
 
-driver.find_element_by_id("act-slice").click()
-driver.find_element_by_id("act-slice").click()
+pyautogui.hotkey("x")
 
 
-
-driver.find_element_by_id("act-export").click()
 
 time.sleep(30)
 
