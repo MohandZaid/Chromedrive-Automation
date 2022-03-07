@@ -1,3 +1,4 @@
+from importlib.resources import path
 from select import select
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -6,7 +7,7 @@ from selenium.webdriver.support.select import Select
 import pyautogui
 
 import time
-
+import os
 
 
 PATH="C:\Program Files (x86)\chromedriver.exe"
@@ -37,8 +38,9 @@ time.sleep(1)
 
 pyautogui.hotkey("alt", "d")
 
+stl_path=os.getcwd()
 
-pyautogui.typewrite("C:/Users/mohand/Desktop")
+pyautogui.typewrite(f"{str(stl_path)}/stl_files")
 
 pyautogui.hotkey("enter")
 
